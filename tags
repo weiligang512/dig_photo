@@ -1,0 +1,105 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC		:= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS		:= -Wall -I$(INCLUDEDIR) -g$/;"	m
+CR	include/frabuff.h	/^} CR;$/;"	t	typeref:union:__anon4
+CURRENTDIR	Makefile	/^CURRENTDIR	:= .$/;"	m
+FALSE	include/mount.h	5;"	d
+FB	include/frabuff.h	/^} FB;$/;"	t	typeref:struct:__anon2
+FBPATH	include/frabuff.h	4;"	d
+INCLUDEDIR	Makefile	/^INCLUDEDIR	:= $(CURRENTDIR)\/include$/;"	m
+JPEG	include/digphoto.h	/^} JPEG;$/;"	t	typeref:struct:__anon1
+LC	include/frabuff.h	/^} LC;$/;"	t	typeref:struct:__anon3
+LDFLAGS	Makefile	/^LDFLAGS		:= -ljpeg -lpthread -lcurses$/;"	m
+MAX_FILENAME	include/filesrc.h	6;"	d
+MAX_FILENUM	include/dirtrav.h	5;"	d
+MAX_FILENUM	include/filesrc.h	5;"	d
+SRCDIR	Makefile	/^SRCDIR		:= $(CURRENTDIR)\/src$/;"	m
+SRCFILE	Makefile	/^SRCFILE		:= $(SRCDIR)\/%.c$/;"	m
+TARGETS	Makefile	/^TARGETS 	:= digphoto$/;"	m
+TARGETSOBJ	Makefile	/^TARGETSOBJ	:= digphoto.o frabuff.o filesrc.o mount.o key.o$/;"	m
+TRUE	include/mount.h	4;"	d
+__DIGPHOTO__	include/digphoto.h	2;"	d
+__DIRTRAV__	include/dirtrav.h	2;"	d
+__FILESRC__	include/filesrc.h	2;"	d
+__FRAMEBUFF__	include/frabuff.h	2;"	d
+__KEY_H__	include/key.h	2;"	d
+__MOUNT_H__	include/mount.h	2;"	d
+btolit	src/frabuff.c	/^btolit (char *filename, FB * arg, struct jpeg_info *jinfo)$/;"	f
+buffer	include/digphoto.h	/^	unsigned char *buffer;$/;"	m	struct:__anon1
+clean_screen	src/frabuff.c	/^clean_screen (int data, FB * arg)$/;"	f
+cr_b	include/frabuff.h	/^		unsigned char cr_b;$/;"	m	struct:__anon4::__anon5
+cr_g	include/frabuff.h	/^		unsigned char cr_g;$/;"	m	struct:__anon4::__anon5
+cr_o	include/frabuff.h	/^		unsigned char cr_o;$/;"	m	struct:__anon4::__anon5
+cr_r	include/frabuff.h	/^		unsigned char cr_r;$/;"	m	struct:__anon4::__anon5
+cr_rgbo	include/frabuff.h	/^	unsigned long cr_rgbo;$/;"	m	union:__anon4
+dir_traversal	src/dirtrav.c	/^dir_traversal (const char *dirname, char cont[MAX_FILENUM][256])$/;"	f
+dir_traversal	src/filesrc.c	/^dir_traversal (const char *dirname, char *ext,$/;"	f
+disp_fb	src/frabuff.c	/^disp_fb (FB * arg, LC * lc, CR * cr)$/;"	f
+disp_line	src/frabuff.c	/^disp_line (FB * arg, LC * lc, JPEG * jpeg)$/;"	f
+disp_pthread	src/digphoto.c	/^disp_pthread (void *arg)$/;"	f
+downtoup	src/frabuff.c	/^downtoup (FB * arg, LC * lc, struct jpeg_info *jinfo, long time)$/;"	f
+fb_arg	src/digphoto.c	/^FB *fb_arg;$/;"	v
+fb_cr	src/digphoto.c	/^CR fb_cr;$/;"	v
+fb_fd	include/frabuff.h	/^	int fb_fd;$/;"	m	struct:__anon2
+fb_lc	src/digphoto.c	/^LC fb_lc;$/;"	v
+fb_p	include/frabuff.h	/^	unsigned char *fb_p;$/;"	m	struct:__anon2
+fb_size	include/frabuff.h	/^	long fb_size;$/;"	m	struct:__anon2
+finfo	include/frabuff.h	/^	struct fb_fix_screeninfo finfo;$/;"	m	struct:__anon2	typeref:struct:__anon2::fb_fix_screeninfo
+flag	include/frabuff.h	/^	int 		flag;$/;"	m	struct:__anon3
+frambuff_init	src/frabuff.c	/^frambuff_init (FB * arg)$/;"	f
+get_jpeg	src/frabuff.c	/^get_jpeg (char *filename, FB * arg, struct jpeg_info *jinfo)$/;"	f
+get_jpeg_b	src/frabuff.c	/^get_jpeg_b (char *filename, FB * arg, struct jpeg_info *jinfo, LC * lc)$/;"	f
+get_jpeg_l	src/frabuff.c	/^get_jpeg_l (char *filename, FB * arg, struct jpeg_info *jinfo, LC * lc)$/;"	f
+global_quit	src/digphoto.c	/^int global_quit = 0;$/;"	v
+ioctl_fb	src/frabuff.c	/^ioctl_fb (FB * arg)$/;"	f
+jinfo	src/digphoto.c	/^struct jpeg_info jinfo;$/;"	v	typeref:struct:jpeg_info
+jp_buff	include/frabuff.h	/^	unsigned char *jp_buff;$/;"	m	struct:jpeg_info
+jp_high	include/frabuff.h	/^	long jp_high;$/;"	m	struct:jpeg_info
+jp_wide	include/frabuff.h	/^	long jp_wide;$/;"	m	struct:jpeg_info
+jpeg_info	include/frabuff.h	/^struct jpeg_info{$/;"	s
+jpeg_name	src/dirtrav.c	/^jpeg_name (struct name *name, char *dirname)$/;"	f
+key	src/digphoto.c	/^char key[4] = { 0 };$/;"	v
+key_get	src/key.c	/^key_get (char *key, size_t lenth)$/;"	f
+key_pthread	src/digphoto.c	/^key_pthread (void *arg)$/;"	f
+key_rwlock	src/digphoto.c	/^pthread_rwlock_t key_rwlock;$/;"	v
+key_sem	src/digphoto.c	/^sem_t key_sem;$/;"	v
+lc_x	include/frabuff.h	/^	unsigned long lc_x;$/;"	m	struct:__anon3
+lc_y	include/frabuff.h	/^	unsigned long lc_y;$/;"	m	struct:__anon3
+lenth	include/frabuff.h	/^	unsigned long lenth;$/;"	m	struct:__anon3
+linetoline	src/frabuff.c	/^linetoline (FB * arg, LC * lc, struct jpeg_info *jinfo, long time)$/;"	f
+ltobig	src/frabuff.c	/^ltobig (char *filename, FB * arg, struct jpeg_info *jinfo)$/;"	f
+lwtocap	src/filesrc.c	/^lwtocap (char *s, char *lw)$/;"	f
+main	src/digphoto.c	/^main (int argc, char **argv)$/;"	f
+mmap_fb	src/frabuff.c	/^mmap_fb (FB * arg)$/;"	f
+mount_pthread	src/digphoto.c	/^mount_pthread (void *arg)$/;"	f
+munmap_fb	src/frabuff.c	/^munmap_fb (FB * arg)$/;"	f
+next_music	src/digphoto.c	/^int next_music = FALSE;$/;"	v
+num	include/frabuff.h	/^	int 		num;$/;"	m	struct:__anon3
+open_fb	src/frabuff.c	/^open_fb (FB * arg)$/;"	f
+pars_name	src/dirtrav.c	/^pars_name (char dirent[MAX_FILENUM][256], struct name *name, int num)$/;"	f
+rgbo	include/frabuff.h	/^	} rgbo;$/;"	m	union:__anon4	typeref:struct:__anon4::__anon5
+scan	src/digphoto.c	/^int scan = 0;$/;"	v
+sigchild	src/digphoto.c	/^sigchild (int sig)$/;"	f
+sighandler	src/digphoto.c	/^sighandler (int sig)$/;"	f
+update	src/frabuff.c	/^update (FB * arg, struct jpeg_info *jinfo)$/;"	f
+uptodown	src/frabuff.c	/^uptodown (FB * arg, LC * lc, struct jpeg_info *jinfo, long time)$/;"	f
+us_dev	include/mount.h	/^	char *us_dev;$/;"	m	struct:usb
+us_flag	include/mount.h	/^	int  us_flag;$/;"	m	struct:usb
+us_path	include/mount.h	/^	char *us_path;$/;"	m	struct:usb
+usb	include/mount.h	/^struct usb{$/;"	s
+usb	src/digphoto.c	/^struct usb usb[4];$/;"	v	typeref:struct:usb
+usb_creatmntpath	src/mount.c	/^usb_creatmntpath (struct usb *usb)$/;"	f
+usb_init	src/mount.c	/^usb_init (struct usb *usb)$/;"	f
+usb_mount	src/mount.c	/^usb_mount (struct usb *usb)$/;"	f
+usb_rmmntpath	src/mount.c	/^usb_rmmntpath (struct usb *usb)$/;"	f
+usb_sem	src/digphoto.c	/^sem_t usb_sem;$/;"	v
+usb_umount	src/mount.c	/^usb_umount (struct usb *usb)$/;"	f
+vinfo	include/frabuff.h	/^	struct fb_var_screeninfo vinfo;$/;"	m	struct:__anon2	typeref:struct:__anon2::fb_var_screeninfo
+wide	include/frabuff.h	/^	unsigned long wide;$/;"	m	struct:__anon3
+x	include/digphoto.h	/^	long x;$/;"	m	struct:__anon1
+y	include/digphoto.h	/^	long y;$/;"	m	struct:__anon1
