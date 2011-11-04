@@ -1,4 +1,5 @@
-#include <curses.h>
+//#include <curses.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "key.h"
@@ -8,9 +9,9 @@ key_get (char *key, size_t lenth)
 {
   int i;
 
-  initscr ();
-  cbreak ();
-  noecho ();
+//  initscr ();
+//  cbreak ();
+//  noecho ();
   if (lenth < 3)
     {
       return NULL;
@@ -20,14 +21,14 @@ key_get (char *key, size_t lenth)
 
   for (i = 0; i < 3; i++)
     {
-      key[i] = getch ();
+      key[i] = getchar ();
       // if (key[0] > '!' && key[0] < '~')
       if (key[0] != 27)
 	{
 	  break;
 	}
     }
-  endwin ();
+//  endwin ();
 
   return key;
 }

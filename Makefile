@@ -8,11 +8,11 @@ SRCFILE		:= $(SRCDIR)/%.c
 
 TARGETSOBJ	:= digphoto.o frabuff.o filesrc.o mount.o key.o
 
-CC		:= gcc
+CC		:= arm-linux-gcc
 
-CFLAGS		:= -Wall -I$(INCLUDEDIR) -g
+CFLAGS		:= -Wall -DDEBUG -I$(INCLUDEDIR) -g
 
-LDFLAGS		:= -ljpeg -lpthread -lcurses
+LDFLAGS		:= -static -ljpeg -lpthread 
 
 TARGETS 	:= digphoto
 
